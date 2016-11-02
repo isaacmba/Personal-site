@@ -1,3 +1,8 @@
+*{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;
+}
 nav{
 	background-color: black;
 	position: fixed;
@@ -26,7 +31,7 @@ nav li a{
 	max-width: 500px;
 	display: block;
 	margin: 0 auto;
-	padding: 125px ;
+	padding: 100px ;
 }
 
 body{
@@ -53,5 +58,29 @@ h1 {
   color:white;
   padding: 25px;
 }
-
+.column-60{
+	height: 300px;
+	width: 60%;
+	float:left;
+}
+.column-40{
+	height: 300px;
+	width: 40%;
+	float:left;
+}
+@media (max-width: 700px){
+  .column{
+    width:100%;
+  }
+}
+@media (max-width: 700px){
+  .column-40{
+    width:100%;
+  }
+}
+@media (max-width: 700px){
+  .column-60{
+    width:100%;
+  }
+}
 
